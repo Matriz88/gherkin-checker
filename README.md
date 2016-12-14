@@ -1,4 +1,5 @@
 # gherkin-checker
+[![npm version](https://badge.fury.io/js/gherkin-checker.svg)](https://badge.fury.io/js/gherkin-checker)
 
 Consistency gherkins checker for [nightwatch-cucumber](https://github.com/mucsi96/nightwatch-cucumber) projects.
 
