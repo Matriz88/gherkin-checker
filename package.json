@@ -2,7 +2,12 @@
   "name": "gherkin-checker",
   "version": "0.0.1",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "gherkin-checker": "tape ./index.js | tap-spec || exit 0"
+  },
+  "bin": {
+    "gherkin-checker": "./bin/gherkin-checker"
+  },
   "dependencies": {
     "fs": "0.0.1-security",
     "gherkin": "^4.0.0",
