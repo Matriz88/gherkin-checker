@@ -2,13 +2,17 @@ let Gherkin = require('gherkin');
 let parser = new Gherkin.Parser();
 let tape = require('tape');
 
+let path = require('path');
+
 let readDirRecurs = require('./utils/utilities').readDirRecurs;
 let readFileAsync = require('./utils/utilities').readFileAsync;
 
 let performTest = require('./utils/test-runner');
 let stepsCache = [];
 
-readDirRecurs('features', (err, data) => {
+const config = require('./config/default_config')
+
+readDirRecurs(path.resolve(config.features_path), (err, data) => {
     if (err) throw err;
 
     tape('Check gherkin components', assert => {
