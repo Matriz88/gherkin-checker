@@ -11,6 +11,11 @@ of globally
 ```
 npm install -g gherkin-checker
 ```
+###Run
+In your source folder simply run
+```
+gherkin-checker
+```
 
 ###Configuration
 In your project root create a file named `gherkin-checker.conf.js` if you want to override the default configs.
