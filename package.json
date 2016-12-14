@@ -1,0 +1,13 @@
+{
+  "name": "gherkin-checker",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "gherkin": "^4.0.0",
+    "path": "^0.12.7",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  }
+}
