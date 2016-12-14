@@ -1,4 +1,4 @@
-global.cg_cofig = require('./config/default_config');
+global.cg_cofig = require('./config/configurations');
 
 let tape = require('tape');
 let path = require('path');

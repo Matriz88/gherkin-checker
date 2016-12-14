@@ -36,7 +36,7 @@ module.exports = {
 The folder containing your gherkins (.features).
 
 ####steps_path_path (string | required)
-The folder containing your steps definition.
+The file containing your steps definition.
 
 ####components (object | optional)
 Components configurations.
@@ -67,6 +67,6 @@ then you should set `components.enable = true`.
 
 ####components.options
 #####components_path (string | required if `components.enable = true`)
-The folder containing your components definition.
+The file containing your components definition.
 #####excludedComponents (array | optional)
 Array of components you want to skip in consistency check.
