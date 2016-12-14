@@ -25,10 +25,8 @@ module.exports = {
     steps_path: "./scripts/steps/common-steps",
     components: {
         enabled: true,
-        options: {
-            components_path: "./scripts/libs/components",
-            excludedComponents: ["component1", "component2"]
-        }
+		components_path: "./scripts/libs/components",
+		excludedComponents: ["component1", "component2"]
     }
 }
 ```
@@ -41,17 +39,17 @@ The file containing your steps definition.
 ####components (object | optional)
 Components configurations.
 
-If you use a file that exports a list of components used instead of css-selectors, for example:
+If you use a file that exports a list of components used used for mapping css-selectors, for example:
 ```js
 // example: components.js
 
 module.exports {
-    _components: [
-        'component1',
-        'component2',
-        'component3',
-        'component4'
-    ]
+    _components: {
+        'component1': 'body',
+        'component2': '.container',
+        'component3': '.container div',
+        'component4': '.footer a.link'
+    }
 }
 ```
 and your gherkin you have something like this:
@@ -65,8 +63,7 @@ Scenario:
 ```
 then you should set `components.enable = true`.
 
-####components.options
-#####components_path (string | required if `components.enable = true`)
+####components_path (string | required if `components.enable = true`)
 The file containing your components definition.
-#####excludedComponents (array | optional)
+####excludedComponents (array | optional)
 Array of components you want to skip in consistency check.

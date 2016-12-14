@@ -9,7 +9,7 @@ let stepsCache = [];
 utils.readDirRecurs(path.resolve(global.cg_cofig.features_path), (err, data) => {
     if (err) throw err;
 
-    tape('Check gherkin components', assert => {
+    tape('Check gherkin consistency', assert => {
         data.forEach(file => {
             let fileReadTask = utils.readFileAsync(file);
             fileReadTask.then(data => {

@@ -3,9 +3,7 @@ module.exports = {
     steps_path: "./steps/common-steps",
     components: {
         enabled: false,
-        options: {
-            components_path: "./components/components",
-            excludedComponents: []
-        }
+        components_path: "./components/components",
+        excludedComponents: []
     }
 }
