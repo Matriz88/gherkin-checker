@@ -36,5 +36,5 @@
   "main": "index.js",
   "devDependencies": {},
   "author": "Matteo Rizzatti",
-  "license": "ISC"
+  "license": "MIT"
 }
