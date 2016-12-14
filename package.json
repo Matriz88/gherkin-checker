@@ -1,6 +1,6 @@
 {
   "name": "gherkin-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "scripts": {
     "gherkin-checker": "tape ./index.js | tap-spec || exit 0"
