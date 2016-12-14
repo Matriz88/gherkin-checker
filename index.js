@@ -4,10 +4,10 @@ let tape = require('tape');
 
 let path = require('path');
 
-let readDirRecurs = require('./utils/utilities').readDirRecurs;
-let readFileAsync = require('./utils/utilities').readFileAsync;
+let readDirRecurs = require('./lib/utils/utilities').readDirRecurs;
+let readFileAsync = require('./lib/utils/utilities').readFileAsync;
 
-let performTest = require('./utils/test-runner');
+let performTest = require('./lib/test-runner/test-runner');
 let stepsCache = [];
 
 const config = require('./config/default_config')
