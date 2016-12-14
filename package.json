@@ -15,5 +15,26 @@
     "tap-spec": "^4.1.1",
     "tape": "^4.6.3",
     "lodash": "latest"
-  }
+  },
+  "keywords": [
+    "gherkin",
+    "cucumber.js",
+    "nightwatch.js",
+    "nightwatch-cucumber.js",
+    "parser",
+    "consistency"
+  ],
+  "homepage": "https://github.com/Matriz88/gherkin-checker",
+  "bugs": {
+    "url": "https://github.com/Matriz88/gherkin-checker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matriz88/gherkin-checker.git"
+  },
+  "description": "Consistency gherkins checker for [nightwatch-cucumber](https://github.com/mucsi96/nightwatch-cucumber) projects.",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "Matteo Rizzatti",
+  "license": "ISC"
 }
