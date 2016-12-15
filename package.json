@@ -18,9 +18,12 @@
   },
   "keywords": [
     "gherkin",
-    "cucumber.js",
-    "nightwatch.js",
-    "nightwatch-cucumber.js",
+    "checker",
+    "cucumber",
+    "nightwatch",
+    "nightwatch-cucumber",
+    "unit test",
+    "unitTest",
     "parser",
     "consistency"
   ],
