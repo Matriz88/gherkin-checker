@@ -58,7 +58,7 @@ module.exports {
     }
 }
 ```
-and your gherkin you have something like this:
+and in your gherkin you have something like this:
 ```gherkin
 #gherkin that uses components
 
