@@ -11,18 +11,18 @@ utils.readDirRecurs(path.resolve(global.cg_cofig.features_path), (err, data) => 
 
     tape('Check gherkin consistency', assert => {
         data.forEach(file => {
-            let fileReadTask = utils.readFileAsync(file);
-            fileReadTask.then(data => {
-                var compiledGherkin = utils.getCompiledGherkin(data);
-                compiledGherkin.forEach(scenario => {
-                    scenario.steps.forEach(step => {
-                        //skip already checked steps
-                        if (stepsCache.indexOf(step.text) > -1) return;
-                        stepsCache.push(step.text);
-                        performTest(step, assert);
-                    })
+            let fileContent = utils.readFileSync(file);
+            if (!fileContent) return
+            var compiledGherkin = utils.getCompiledGherkin(fileContent);
+            compiledGherkin.forEach(scenario => {
+                scenario.steps.forEach(step => {
+                    //skip already checked steps
+                    if (stepsCache.indexOf(step.text) > -1) return;
+                    stepsCache.push(step.text);
+                    performTest(step, assert);
                 })
-            }).catch((err) => console.log(err.message))
+            })
+
         });
         assert.end();
     });
