@@ -9,6 +9,7 @@
     "gherkin-checker": "./bin/gherkin-checker"
   },
   "dependencies": {
+    "commander": "^2.9.0",
     "fs": "0.0.1-security",
     "gherkin": "^4.0.0",
     "lodash": "^4.17.2",
