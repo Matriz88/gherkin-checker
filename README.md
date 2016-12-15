@@ -45,7 +45,7 @@ The file containing your steps definition.
 ####components (object | optional)
 Components configurations.
 
-If you use a file that exports a list of components used used for mapping css-selectors, for example:
+If you use a file that exports a list of components used for mapping css-selectors, for example:
 ```js
 // example: components.js
 
