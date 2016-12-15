@@ -8,18 +8,23 @@ Install the module in your source folder
 ```
 npm install gherkin-checker --save
 ```
-of globally
+and add it to your scripts
+```
+"scripts": {
+	"gherkin-checker": "gherkin-checker"
+}
+```
+or install globally
 ```
 npm install -g gherkin-checker
 ```
-###Run
-In your source folder simply run
+and in your source folder simply run
 ```
 gherkin-checker
 ```
 
 ###Configuration
-In your project root create a file named `gherkin-checker.conf.js` if you want to override the default configs.
+In the folder where you'll run the module create a file named `gherkin-checker.conf.js` if you want to override the default configs.
 ```js
 module.exports = {
     features_path: "./features",
