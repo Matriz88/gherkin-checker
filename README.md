@@ -39,8 +39,8 @@ module.exports = {
 ####features_path (string | required)
 The folder containing your gherkins (.features).
 
-####steps_path_path (string | required)
-The file containing your steps definition.
+####steps_path (string | required)
+The file containing your steps definitions.
 
 ####components (object | optional)
 Components configurations.
