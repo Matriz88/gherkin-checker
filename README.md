@@ -29,21 +29,30 @@ In the folder where you'll run the module create a file named `gherkin-checker.c
 
 module.exports = {
     features_path: "./features",
-    steps_path: "./scripts/steps/common-steps",
+    steps_path: "./steps/common-steps",
+    mode: 'full',
     components: {
-        enabled: true,
-		components_path: "./scripts/libs/components",
-		excludedComponents: ["component1", "component2"]
+        enabled: false,
+        components_path: "./components/components",
+        excludedComponents: []
+    },
+    reporter: {
+        type: 'full'
     }
 }
 ```
-####features_path (string | required)
+####features_path (string)
 The folder containing your gherkin files (`.features`).
 
-####steps_path (string | required)
+####steps_path (string)
 The file containing your steps definitions.
 
-####components (object | required)
+####mode (string)
+Define the test running mode.
+- `full`: a **separate test** will be performed for each file
+- `light`: a **global test** will be performed for all files
+
+####components (object)
 Additional components configurations.
 
 If you use a module that exports a list of components used for mapping css-selectors with this structure:
@@ -70,15 +79,22 @@ Scenario:
 ```
 then you should set `components.enable = true`.
 
-####components.enable (bool | required)
+####components.enable (bool)
 Enable additional components support
 
-####components_path (string | required only if `components.enable = true`)
+####components.components_path (string)
 The file containing your components definition.
 
-####excludedComponents (array | optional)
+####components.excludedComponents (array)
 Array of components you want to skip in consistency check.
 
+####reporter (object)
+Console reporter configurations.
+
+####reporter.type (string)
+Define the console report style.
+- `full`: both successful and failed assertions will be shown
+- `light`: only failed assertions will be shown
 
 ###Parameters
 you can specify the `--path` parameter to change the `features_path` option
