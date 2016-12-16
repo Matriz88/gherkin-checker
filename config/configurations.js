@@ -13,4 +13,4 @@ try {
         throw e;
 }
 
-module.exports = _.merge({}, defaultConfig, customConfig);
+module.exports = _.merge(defaultConfig, customConfig);

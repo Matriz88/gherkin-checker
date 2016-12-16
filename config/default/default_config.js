@@ -5,5 +5,8 @@ module.exports = {
         enabled: false,
         components_path: "./components/components",
         excludedComponents: []
+    },
+    reporter: {
+        type: 'light' //'full' or 'light'
     }
 }
