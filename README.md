@@ -98,6 +98,8 @@ Define the console report style.
 - `full`: both successful and failed assertions will be shown
 - `light`: only failed assertions will be shown
 
+######credits: the reporter is a custom version of [tap-diff](https://github.com/axross/tap-diff)
+
 ###Parameters
 you can specify the `--path` parameter to change the `features_path` option
 ```
