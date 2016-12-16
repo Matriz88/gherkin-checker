@@ -3,6 +3,8 @@
 
 Consistency gherkins checker for [nightwatch-cucumber](https://github.com/mucsi96/nightwatch-cucumber) projects.
 
+Given a folder containing gherkin files (`.features`), a consistency test will check if all the steps used in the gherkins will match in your steps definition file.
+
 ###How to use
 Install the module in your source folder
 ```
@@ -49,8 +51,8 @@ The file containing your steps definitions.
 
 ####mode (string)
 Define the test running mode.
-- `full`: a **separate test** will be performed for each file
-- `light`: a **global test** will be performed for all files
+- `full`: a **separate test** will be performed for each `.feature` file in the `features_path` folder
+- `light`: a **global test** will be performed for all `.feature` files in the `features_path` folder
 
 ####components (object)
 Additional components configurations.
