@@ -6,11 +6,11 @@ let defaultConfig = require('./default/default_config');
 let customConfig = {};
 try {
     let customConfigPath = path.resolve('gherkin-checker.conf.js');
-    if(fs.statSync(customConfigPath))
+    if (fs.statSync(customConfigPath))
         customConfig = require(customConfigPath)
 } catch (e) {
     if (e.code !== 'ENOENT')
         throw e;
 }
 
-module.exports = _.merge({}, defaultConfig, customConfig);
+module.exports = _.merge(defaultConfig, customConfig);
