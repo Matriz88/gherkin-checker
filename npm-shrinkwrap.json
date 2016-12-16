@@ -1,6 +1,6 @@
 {
   "name": "gherkin-checker",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "dependencies": {
     "ansi-regex": {
       "version": "2.0.0",
@@ -34,7 +34,7 @@
     },
     "commander": {
       "version": "2.9.0",
-      "from": "commander@latest",
+      "from": "commander@>=2.9.0 <3.0.0",
       "resolved": "https://registry.npmjs.org/commander/-/commander-2.9.0.tgz"
     },
     "concat-map": {
@@ -184,7 +184,7 @@
     },
     "lodash": {
       "version": "4.17.2",
-      "from": "lodash@latest",
+      "from": "lodash@>=4.17.2 <5.0.0",
       "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.2.tgz"
     },
     "minimatch": {
