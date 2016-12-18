@@ -39,7 +39,7 @@ module.exports = {
         excludedComponents: []
     },
     reporter: {
-        type: 'full'
+        type: 'light'
     }
 }
 ```
@@ -107,8 +107,9 @@ Usage: gherkin-checker [options]
 
 Options:
 
-  -h, --help        output usage information
-  -V, --version     output the version number
-  -p, --path <path> features folder location (priority over configuration files)
-
+  -h, --help            output usage information
+  -V, --version         output the version number
+  -p, --path <path>     features folder location (priority over configuration files)
+  -m, --mode <value>    (optional) test mode [full|light])
+  -r, --report <value>  (optional) report style [full|light])
 ```

@@ -8,6 +8,6 @@ module.exports = {
         excludedComponents: []
     },
     reporter: {
-        type: 'full' //'full' or 'light'
+        type: 'light' //'full' or 'light'
     }
 }
