@@ -1,5 +1,5 @@
 # gherkin-checker
-[![npm version](https://badge.fury.io/js/gherkin-checker.svg)](https://badge.fury.io/js/gherkin-checker)
+[![npm version](https://badge.fury.io/js/gherkin-checker.svg)](https://badge.fury.io/js/gherkin-checker) [![travis build](https://travis-ci.org/Matriz88/gherkin-checker.svg?branch=master)](https://travis-ci.org/Matriz88/gherkin-checker)
 
 Consistency gherkins checker for [nightwatch-cucumber](https://github.com/mucsi96/nightwatch-cucumber) projects.
 
