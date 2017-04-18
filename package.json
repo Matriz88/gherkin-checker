@@ -1,6 +1,6 @@
 {
   "name": "gherkin-checker",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
   "scripts": {
     "gherkin-checker": "tape ./index.js | tap-spec || exit 0"
@@ -13,12 +13,11 @@
     "commander": "^2.9.0",
     "duplexer": "^0.1.1",
     "figures": "^2.0.0",
-    "fs": "0.0.1-security",
     "gherkin": "^4.0.0",
     "lodash": "^4.17.2",
     "path": "^0.12.7",
     "pretty-ms": "^2.1.0",
-    "tap-parser": "^3.0.4",
+    "tap-parser": "^3.0.5",
     "tape": "^4.6.3",
     "through2": "^2.0.3"
   },
